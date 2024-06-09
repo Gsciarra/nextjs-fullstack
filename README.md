@@ -1,13 +1,13 @@
 # Turborepo Tailwind CSS starter
 
-This is an official starter Turborepo.
+This is a not official starter Turborepo.
 
 ## Using this example
 
 Run the following command:
 
 ```sh
-npx create-turbo@latest -e with-tailwind
+npx create-turbo@latest -e https://github.com/Gsciarra/nextjs-fullstack
 ```
 
 ## What's inside?
@@ -38,12 +38,12 @@ Another option is to consume `packages/ui` directly from source without building
 For example, in [tailwind.config.js](packages/tailwind-config/tailwind.config.js):
 
 ```js
-  content: [
-    // app content
-    `src/**/*.{js,ts,jsx,tsx}`,
-    // include packages if not transpiling
-    "../../packages/ui/*.{js,ts,jsx,tsx}",
-  ],
+content: [
+  // app content
+  `src/**/*.{js,ts,jsx,tsx}`,
+  // include packages if not transpiling
+  "../../packages/ui/*.{js,ts,jsx,tsx}",
+];
 ```
 
 If you choose this strategy, you can remove the `tailwindcss` and `autoprefixer` dependencies from the `ui` package.
