@@ -7,6 +7,8 @@
     "type-check": "turbo type-check",
     "clean": "turbo clean",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,md}\"",
+    "check-all": " pnpm format:check && turbo run type-check lint build --concurrency=3",
     "prepare": "husky"
   },
   "devDependencies": {
