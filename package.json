@@ -7,11 +7,12 @@
     "type-check": "turbo type-check",
     "clean": "turbo clean",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-all": "pnpm type-check && pnpm lint && pnpm run format && pnpm build"
+    "prepare": "husky"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "eslint": "^8",
+    "husky": "^9.0.11",
     "prettier": "^3",
     "prettier-plugin-tailwindcss": "^0.6.2",
     "turbo": "latest"
