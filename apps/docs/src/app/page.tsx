@@ -3,7 +3,7 @@ import { Card } from "@repo/ui/card";
 
 function Gradient({
   conic,
-  className,
+  className = "",
   small,
 }: {
   small?: boolean;
