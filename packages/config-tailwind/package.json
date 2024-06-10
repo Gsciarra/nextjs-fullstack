@@ -6,7 +6,9 @@
     ".": "./tailwind.config.ts"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
-    "tailwindcss": "^3.4.4"
+    "@repo/config-typescript": "workspace:*",
+    "tailwindcss": "^3.4.4",
+    "typescript": "latest",
+    "@types/node": "^20"
   }
 }
