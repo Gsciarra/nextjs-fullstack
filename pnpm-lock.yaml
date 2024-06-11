@@ -29,9 +29,9 @@ importers:
 
   apps/docs:
     dependencies:
-      '@repo/ui':
+      '@repo/components':
         specifier: workspace:*
-        version: link:../../packages/ui
+        version: link:../../packages/components
       next:
         specifier: ^14.2.3
         version: 14.2.3(react-dom@18.3.1)(react@18.3.1)
@@ -78,9 +78,9 @@ importers:
 
   apps/web:
     dependencies:
-      '@repo/ui':
+      '@repo/components':
         specifier: workspace:*
-        version: link:../../packages/ui
+        version: link:../../packages/components
       next:
         specifier: ^14.2.3
         version: 14.2.3(react-dom@18.3.1)(react@18.3.1)
@@ -125,33 +125,7 @@ importers:
         specifier: latest
         version: 5.4.5
 
-  packages/config-tailwind:
-    devDependencies:
-      '@repo/config-typescript':
-        specifier: workspace:*
-        version: link:../config-typescript
-      '@types/node':
-        specifier: ^20
-        version: 20.14.2
-      tailwindcss:
-        specifier: ^3.4.4
-        version: 3.4.4
-      typescript:
-        specifier: latest
-        version: 5.4.5
-
-  packages/config-typescript: {}
-
-  packages/eslint-config:
-    devDependencies:
-      '@vercel/style-guide':
-        specifier: ^6.0.0
-        version: 6.0.0(eslint@8.57.0)(prettier@3.3.2)(typescript@5.4.5)
-      eslint-config-turbo:
-        specifier: ^2.0.3
-        version: 2.0.3(eslint@8.57.0)
-
-  packages/ui:
+  packages/components:
     devDependencies:
       '@repo/config-typescript':
         specifier: workspace:*
@@ -177,6 +151,32 @@ importers:
       typescript:
         specifier: latest
         version: 5.4.5
+
+  packages/config-tailwind:
+    devDependencies:
+      '@repo/config-typescript':
+        specifier: workspace:*
+        version: link:../config-typescript
+      '@types/node':
+        specifier: ^20
+        version: 20.14.2
+      tailwindcss:
+        specifier: ^3.4.4
+        version: 3.4.4
+      typescript:
+        specifier: latest
+        version: 5.4.5
+
+  packages/config-typescript: {}
+
+  packages/eslint-config:
+    devDependencies:
+      '@vercel/style-guide':
+        specifier: ^6.0.0
+        version: 6.0.0(eslint@8.57.0)(prettier@3.3.2)(typescript@5.4.5)
+      eslint-config-turbo:
+        specifier: ^2.0.3
+        version: 2.0.3(eslint@8.57.0)
 
 packages:
 

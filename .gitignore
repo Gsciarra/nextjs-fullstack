@@ -32,7 +32,7 @@ yarn-error.log*
 # turbo
 .turbo
 
-# ui
+# components
 dist/
 
 # ts build info
