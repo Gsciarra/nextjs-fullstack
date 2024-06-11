@@ -9,8 +9,8 @@
     "clean": "turbo clean",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,md}\"",
-    "check-all": " pnpm format:check && turbo run type-check lint build --concurrency=3",
-    "fix-all": " pnpm format && pnpm lint:fix && turbo run type-check build --concurrency=2",
+    "check-all": "pnpm format:check && turbo run type-check lint build --concurrency=3",
+    "fix-all": "pnpm format && pnpm lint:fix && turbo run type-check build --concurrency=2",
     "prepare": "husky"
   },
   "devDependencies": {

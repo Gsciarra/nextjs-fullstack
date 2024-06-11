@@ -1,4 +1,2 @@
-pnpm type-check
-pnpm lint
 pnpm format:check
-pnpm build
+turbo run type-check lint build --concurrency=3
