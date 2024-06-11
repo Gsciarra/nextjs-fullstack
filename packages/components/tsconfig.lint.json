@@ -4,7 +4,7 @@
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
-      "@repo/components/*": ["./src/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["src", "turbo", "tailwind.config.ts", "postcss.config.js"],
