@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Omit<Config, "content"> = {
-  darkMode: ["class"],
+  darkMode: ["class", '[data-mode="dark"]'],
   prefix: "",
   theme: {
     container: {

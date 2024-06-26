@@ -39,6 +39,15 @@ export interface ButtonProps
   asChild?: boolean;
 }
 
+/**
+ * - The Button component is used for actions and triggers.
+ * - It is a wrapper around the native button element.
+ * - It supports all the native button attributes and events.
+ * - It also supports the `variant` and `size` props.
+ * - The `variant` prop is used to change the appearance of the button.
+ * - The `size` prop is used to change the size of the button.
+ * - The `asChild` prop is used to render the button as a child of another component.
+ */
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : "button";

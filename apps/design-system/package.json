@@ -1,0 +1,49 @@
+{
+  "name": "design-system",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "next:dev": "next dev --turbo",
+    "next:build": "next build",
+    "next:start": "next start",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "dev": "pnpm run storybook",
+    "build": "pnpm run build-storybook"
+  },
+  "dependencies": {
+    "@chromatic-com/storybook": "^1",
+    "@heroicons/react": "^2",
+    "@repo/components": "workspace:*",
+    "@storybook/addon-a11y": "^8",
+    "@storybook/addon-actions": "^8.1.10",
+    "@storybook/addon-docs": "^8.1.10",
+    "@storybook/addon-essentials": "^8",
+    "@storybook/addon-interactions": "^8",
+    "@storybook/addon-links": "^8",
+    "@storybook/addon-themes": "^8",
+    "@storybook/addon-viewport": "^8",
+    "@storybook/blocks": "^8",
+    "@storybook/nextjs": "^8",
+    "@storybook/react": "^8",
+    "@storybook/test": "^8",
+    "next": "^15.0.0-rc.0",
+    "react": "^19.0.0-rc-3563387fe3-20240621",
+    "react-dom": "^19.0.0-rc-3563387fe3-20240621",
+    "storybook": "^8"
+  },
+  "devDependencies": {
+    "@repo/config-typescript": "workspace:*",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/tailwind-config": "workspace:*",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.0-rc.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
