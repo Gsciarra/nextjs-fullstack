@@ -1,6 +1,6 @@
 # Turborepo Tailwind CSS starter
 
-This is a not official starter Turborepo.
+This is not an official starter Turborepo.
 
 ## Using this example
 
